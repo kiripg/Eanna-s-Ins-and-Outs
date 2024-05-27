@@ -3,3 +3,10 @@ body{
   background-color: #241901;
  
 }
+p, h1, h2{
+  color: white;
+  letter-spacing: 0.1rem;
+}
+p, h2, h1{
+  font-family: "Berkshire Swash"
+}

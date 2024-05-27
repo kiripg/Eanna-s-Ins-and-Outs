@@ -5,7 +5,7 @@ export const headerStyled = {
 
     Text: styled.p`
         font-family: 'Berkshire Swash', Roboto;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: white;
         text-decoration: underline currentcolor;
         
