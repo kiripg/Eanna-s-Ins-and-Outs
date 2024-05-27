@@ -14,10 +14,7 @@ const Writters = () => {
   return (
     <>
       <Header
-        firstLink="/"
-        firstTitle="Main Page"
-        secondLink="/characters"
-        secondTitle="Characters"
+        
       />
       <WrittersStyled.Container>
        <WritterPictures /> 

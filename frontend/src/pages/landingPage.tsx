@@ -11,10 +11,7 @@ const LandingPage = () => {
   return (
     <>
       <Header
-        firstLink="/characters"
-        firstTitle="Characters"
-        secondLink="/writters"
-        secondTitle="Writters"
+     
       />
       <Hero />
       <Rating />
