@@ -9,7 +9,7 @@ const Arunia = () =>{
         <><Header />
         <div>
 
-            <img src={arunia} width={"900rem"} />
+            <img src={arunia} width={"900rem"} alt="its a map"/>
         </div>
         <Footer /></>
     )

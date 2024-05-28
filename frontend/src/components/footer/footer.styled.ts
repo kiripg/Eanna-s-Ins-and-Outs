@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 
+export const FOOTER_HEIGHT = '200px';
+
 export const footerStyled = {
   Container: styled.div`
     background-color: #937b63;
@@ -8,6 +10,7 @@ export const footerStyled = {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+    height: ${FOOTER_HEIGHT};
   `,
   Left: styled.div`
     padding-left: 6rem;

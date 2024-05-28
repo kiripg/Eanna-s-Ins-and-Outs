@@ -5,11 +5,11 @@ import headerStyled from './header.styled';
 import { Link } from 'react-router-dom';
 
 
-
+export const HEADER_HEIGHT= '70px'
 const Header = () =>{
 
     return(
-    <AppBar position="static" sx={{backgroundColor: "#937b63"}}>
+    <AppBar position="static" sx={{backgroundColor: "#937b63", height: HEADER_HEIGHT }}>
         <Toolbar sx={{display: 'flex', justifyContent: 'space-around', alignItems: 'center'}}>
          <Link to="/" ><headerStyled.Text>Main Page</headerStyled.Text></Link>
          <Link to="/characters"><headerStyled.Text>Characters</headerStyled.Text></Link>

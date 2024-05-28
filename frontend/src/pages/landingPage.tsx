@@ -15,8 +15,8 @@ const LandingPage = () => {
       />
       <Hero />
       <Rating />
-      <MoreCharacter pic={char} title="Characters" link="/character" />
-      <MoreCharacter pic={writpic} title="Writters" link="/writter" />
+      <MoreCharacter pic={char} title="Characters" link="/characters" />
+      <MoreCharacter pic={writpic} title="Writters" link="/writters" />
       <Footer />
     </>
   );
