@@ -1,7 +1,10 @@
 import React from "react";
-import arunia from '../assets/map.png'
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
+import AruniaMap from "../components/arunia/aruniamap";
+import Countries from "../components/arunia/countries";
+import Religion from "../components/arunia/religion";
+import Races from "../components/arunia/races";
 
 const Arunia = () =>{
 
@@ -9,7 +12,16 @@ const Arunia = () =>{
         <><Header />
         <div>
 
-            <img src={arunia} width={"900rem"} alt="its a map"/>
+            <AruniaMap />
+        </div>
+        <div>
+        <Countries />
+        </div>
+        <div>
+        <Religion />
+        </div>
+        <div>
+            <Races/>
         </div>
         <Footer /></>
     )

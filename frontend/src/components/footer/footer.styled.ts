@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const FOOTER_HEIGHT = '200px';
+export const FOOTER_HEIGHT = '12rem';
 
 export const footerStyled = {
   Container: styled.div`

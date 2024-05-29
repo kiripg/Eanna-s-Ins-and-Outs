@@ -16,14 +16,14 @@ import CharactersStyled from "./characters.styled";
 
 const Characters = () => {
   const first = [
-    { id: 1, Name: "Aida Ethelind", frontPic: aida },
-    { id: 2, Name: "Alexander 'Zander' Theodil", frontPic: zander },
-    { id: 3, Name: "Diego", frontPic: diego },
-    { id: 4, Name: "Jace", frontPic: jace },
-    { id: 5, Name: "Leroy 'Roy' Mustang", frontPic: roy },
-    { id: 6, Name: "Lissandra Vondai", frontPic: liss },
-    { id: 7, Name: "Mathilde 'Tillie' Daegrat", frontPic: tillie },
-    { id: 8, Name: "Skylar 'Sky' Hemill", frontPic: sky },
+    { id: 1, Name: "Jace", frontPic: jace },
+    { id: 2, Name: "Skylar 'Sky' Hemill", frontPic: sky },
+    { id: 3, Name: "Mathilde 'Tillie' Daegrat", frontPic: tillie },
+    { id: 4, Name: "Alexander 'Zander' Theodil", frontPic: zander },
+    { id: 5, Name: "Lissandra Vondai", frontPic: liss },
+    { id: 6, Name: "Diego", frontPic: diego },
+    { id: 7, Name: "Aida Ethelind", frontPic: aida },
+    { id: 8, Name: "Leroy 'Roy' Mustang", frontPic: roy },
     { id: 9, Name: "Solair", frontPic: solair },
   ];
 
@@ -51,43 +51,72 @@ const Characters = () => {
     <>
       <Header />
       <CharactersStyled.Page>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          padding: "2rem",
-        }}
-      >
-        <Breadcrumbs aria-label="breadcrumb" sx={{ color: "white" }}>
-          <p style={{ cursor: "pointer", textDecoration: 'underline', fontSize: '1.2rem' }} onClick={handleFirst}>
-            First Book
-          </p>
-          <p style={{ cursor: "pointer", textDecoration: 'underline', fontSize: '1.2rem' }} onClick={handleSecond}>
-            Second book
-          </p>
-          <p style={{ cursor: "pointer", textDecoration: 'underline', fontSize: '1.2rem' }} onClick={handleThird}>
-            Third book
-          </p>
-        </Breadcrumbs>
-      </div>
-      
-      {firstBookOpen && !secondBookOpen && !thirdBookOpen && (
-        <CharactersStyled.Container>
-          {first.map((pj) => (
-            <FirstBook key={pj.id} name={pj.Name} pic={pj.frontPic} />
-          ))}
-        </CharactersStyled.Container>
-      )}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            padding: "2rem",
+          }}
+        >
+          <Breadcrumbs aria-label="breadcrumb" sx={{ color: "white" }}>
+            <p
+              style={{
+                cursor: "pointer",
+                textDecoration: "underline",
+                fontSize: "1.2rem",
+              }}
+              onClick={handleFirst}
+            >
+              First Book
+            </p>
+            <p
+              style={{
+                cursor: "pointer",
+                textDecoration: "underline",
+                fontSize: "1.2rem",
+              }}
+              onClick={handleSecond}
+            >
+              Second book
+            </p>
+            <p
+              style={{
+                cursor: "pointer",
+                textDecoration: "underline",
+                fontSize: "1.2rem",
+              }}
+              onClick={handleThird}
+            >
+              Third book
+            </p>
+          </Breadcrumbs>
+        </div>
 
-      {!firstBookOpen && secondBookOpen && !thirdBookOpen && (
-        <CharactersStyled.Container><p style={{fontSize: '1.6rem', fontStyle:'italic'}}> The second book is still in progress... </p></CharactersStyled.Container>
-        
-      )}
+        {firstBookOpen && !secondBookOpen && !thirdBookOpen && (
+          <CharactersStyled.Container>
+            {first.map((pj) => (
+              <FirstBook key={pj.id} name={pj.Name} pic={pj.frontPic} />
+            ))}
+          </CharactersStyled.Container>
+        )}
 
-      {!firstBookOpen && !secondBookOpen && thirdBookOpen && (
-        <CharactersStyled.Container><p style={{fontSize: '1.6rem', fontStyle:'italic'}}>The third book is still in progres... </p></CharactersStyled.Container>
-      )}
+        {!firstBookOpen && secondBookOpen && !thirdBookOpen && (
+          <CharactersStyled.Container>
+            <p style={{ fontSize: "1.6rem", fontStyle: "italic" }}>
+              {" "}
+              The second book is still in progress...{" "}
+            </p>
+          </CharactersStyled.Container>
+        )}
+
+        {!firstBookOpen && !secondBookOpen && thirdBookOpen && (
+          <CharactersStyled.Container>
+            <p style={{ fontSize: "1.6rem", fontStyle: "italic" }}>
+              The third book is still in progres...{" "}
+            </p>
+          </CharactersStyled.Container>
+        )}
       </CharactersStyled.Page>
       <Footer />
     </>

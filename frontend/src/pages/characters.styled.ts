@@ -16,7 +16,7 @@ export const CharactersStyled = {
     align-items: center;
     justify-content:center;
     padding: 2rem 4rem 4rem 4rem;
-    min-height: 45.5vh;
+    min-height: 46.5vh;
     `,
 
 
